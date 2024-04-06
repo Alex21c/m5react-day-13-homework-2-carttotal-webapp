@@ -20,4 +20,68 @@ html{
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  background-color: #343d3f;
 
+}
+
+
+.scrollbar-blue::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar-blue::-webkit-scrollbar-track {
+  background-color: #343d3f; /* or any color you desire */
+}
+
+.scrollbar-blue::-webkit-scrollbar-thumb {
+  background-color: #fde047; /* change this to the color you want */
+  border-radius: 5px;
+  border: 1px solid #343d3f; /* or any color you desire */
+}
+
+
+.inactive{
+  background-color: lightgray;
+  color:gray;
+}
+
+@media screen and (max-width:1148px){
+  #wrapperWebApp{
+    width: 98%;
+  }
+}
+
+@media screen and (max-width:940px){
+  #wrapperWebApp{
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width:446px){
+  #wrapperWebApp, #wrapperWebApp>section{
+    padding: .5rem;
+  }
+  button.btn{
+    font-size:.8rem;
+    padding: .2rem .5rem;        
+  }
+  
+  div.employee{
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  section.wrapperTeam{
+    min-width: unset;
+  }
+}
+
+
+
+@media screen and (max-width:372px){
+  div.product{
+    padding: .5rem;
+    gap:.5rem;
+  }
+
+}
